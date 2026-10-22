@@ -26,7 +26,9 @@ a{color:var(--od)}
 nav{position:sticky;top:0;background:rgba(245,237,224,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--b2);z-index:9}
 nav .w{display:flex;justify-content:space-between;align-items:center;height:56px}
 nav b{color:var(--od)}nav a.n{margin-left:16px;text-decoration:none;color:var(--c);font-size:.95rem}
-@media(max-width:640px){nav a.n.h{display:none}}
+nav .tabs{display:flex;overflow-x:auto;white-space:nowrap;scrollbar-width:none}nav .tabs::-webkit-scrollbar{display:none}
+@media(max-width:700px){nav .w{flex-direction:column;align-items:flex-start;height:auto;padding:8px 20px}nav a.n{margin:4px 14px 4px 0;font-size:.9rem}}
+nav a.n[aria-current]{color:var(--od);font-weight:700}
 .hero{background:linear-gradient(135deg,var(--o),var(--od));color:#fff;padding:96px 0 80px}
 .hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;margin-bottom:16px}
 .hero p{font-size:1.15rem;max-width:620px;opacity:.95}
@@ -57,7 +59,7 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 </style>
 </head>
 <body>
-<nav><div class="w"><b>GayThrouple</b><div><a class="n h" href="#about">About</a><a class="n h" href="#share">What we share</a><a class="n h" href="#kids-eat-free">Kids Eat Free</a><a class="n h" href="#featured">Featured</a><a class="n h" href="#numbers">Numbers</a><a class="n" href="#contact">Contact</a></div></div></nav>
+<nav><div class="w"><a href="/" style="text-decoration:none"><b>GayThrouple</b></a><div class="tabs"><a class="n" aria-current="page" href="/">Home</a><a class="n" href="/who-we-are/">Who We Are</a><a class="n" href="/#kids-eat-free">Kids Eat Free</a><a class="n" href="/#brands">Brands / Media Kit</a><a class="n" href="/#contact">Contact</a></div></div></nav>
 <header class="hero"><div class="w">
 <div class="tags">LGBTQ+ Family Creators</div>
 <h1>Three gay dads. Three kids.<br>One joyful, real family life.</h1>
@@ -65,33 +67,13 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 <a class="btn l" href="https://instagram.com/gaythrouple" rel="noopener">Instagram @GayThrouple</a>
 <a class="btn g" href="https://www.tiktok.com/@thegaythrouple" rel="noopener">TikTok @Thegaythrouple</a>
 <a class="btn g" href="#contact">Partner with us</a>
-<img src="img/family.jpg" width="1100" height="838" alt="Benjamin, Ben and Mitch pushing their three kids in strollers across a rainbow crosswalk" fetchpriority="high">
+<img src="/img/family.jpg" width="1100" height="838" alt="Benjamin, Ben and Mitch pushing their three kids in strollers across a rainbow crosswalk" fetchpriority="high">
 </div></header>
 <main>
-<section id="about"><div class="w">
-<h2>Who we are</h2>
-<p class="lead">Benjamin, Ben, and Mitch: three gay dads in a committed relationship raising two daughters and a son. We share LGBTQ+ family lifestyle, travel, parenting, and modern family life: warm, vibrant, and authentic, with the messy-beautiful moments included. Brands partner with us for real family storytelling that parents, queer families, and allies already trust.</p>
-<div class="grid">
-<div class="stat"><b>13.6K</b>Instagram followers · @GayThrouple, verified account</div>
-<div class="stat"><b>460</b>Posts total on Instagram</div>
-<div class="stat"><b>~527K</b>Views on our top pinned post</div>
-<div class="stat"><b>TikTok</b>Growing presence · <a style="color:var(--o)" href="https://www.tiktok.com/@thegaythrouple">@Thegaythrouple</a></div>
-</div>
-</div></section>
-<section id="share" class="alt"><div class="w">
-<h2>What we share</h2>
-<div class="grid">
-<div class="card"><h3>Family Life</h3><p>Parenting, routines, and everyday love with three young kids.</p></div>
-<div class="card"><h3>Travel</h3><p>Adventures with kids in tow: stays, cities, and getting there.</p></div>
-<div class="card"><h3>LGBTQ+ Visibility</h3><p>Pride, representation, and chosen family, lived out loud.</p></div>
-<div class="card"><h3>Dad Humor</h3><p>Lighthearted takes on modern dad life: warm and shareable.</p></div>
-</div>
-</div></section>
-<section id="kids-eat-free"><div class="w">
-<h2>Series: Kids Eat Free</h2>
-<p class="lead">Our family eating out with all three kids at restaurants where kids eat free. Every episode opens with one big repeating title, <b>3 KIDS. $0.</b>, with the restaurant line underneath.</p>
-<div class="card" style="margin-top:24px"><h3>Local SoCal spots we've featured</h3><p>The Kebab Shop La Habra · Green Tomato Grill Brea · WaBa Grill · Rubio's</p></div>
-<p style="margin-top:20px"><b>Family restaurants:</b> want your kids-eat-free night in front of families who are already looking for one? Let's feature it. <a href="#contact">Get in touch</a>.</p><p>Watch an episode: <a href="https://www.instagram.com/reel/DdwiKP-JG8I/" target="_blank" rel="noopener">Kids Eat Free: Green Tomato Grill, Brea</a> · <a href="#featured">more featured posts</a></p>
+<section id="intro"><div class="w">
+<h2>Hi, we're GayThrouple</h2>
+<p class="lead">Benjamin, Ben, and Mitch: three gay dads in a committed relationship raising two daughters and a son, sharing LGBTQ+ family lifestyle, travel, parenting, and modern family life.</p>
+<p style="margin-top:20px"><a class="btn d" href="/who-we-are/">Meet the family &rarr;</a></p>
 </div></section>
 <section id="featured" class="alt"><div class="w">
 <h2>Featured posts</h2>
@@ -106,6 +88,12 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTJutxvCTzq/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a class="fb" href="https://www.instagram.com/reel/DTJutxvCTzq/?utm_source=ig_embed" target="_blank" rel="noopener"><span class="play" aria-hidden="true">&#9654;</span><b>Brand partnership: TernX</b><span class="cta">Watch on Instagram &rarr;</span></a></blockquote></figure>
 </div>
 <p class="small">Reels not loading? Tap any card to watch on <a href="https://instagram.com/gaythrouple" rel="noopener">Instagram</a>.</p>
+</div></section>
+<section id="kids-eat-free"><div class="w">
+<h2>Series: Kids Eat Free</h2>
+<p class="lead">Our family eating out with all three kids at restaurants where kids eat free. Every episode opens with one big repeating title, <b>3 KIDS. $0.</b>, with the restaurant line underneath.</p>
+<div class="card" style="margin-top:24px"><h3>Local SoCal spots we've featured</h3><p>The Kebab Shop La Habra · Green Tomato Grill Brea · WaBa Grill · Rubio's</p></div>
+<p style="margin-top:20px"><b>Family restaurants:</b> want your kids-eat-free night in front of families who are already looking for one? Let's feature it. <a href="#contact">Get in touch</a>.</p><p>Watch an episode: <a href="https://www.instagram.com/reel/DdwiKP-JG8I/" target="_blank" rel="noopener">Kids Eat Free: Green Tomato Grill, Brea</a> · <a href="#featured">more featured posts</a></p>
 </div></section>
 <section id="numbers"><div class="w">
 <h2>The numbers behind the reach</h2>
@@ -142,7 +130,7 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 </div>
 <p class="small">Performance windows run through Sep 22, 2026. Audience and recent reel figures are from our latest Instagram dashboard.</p>
 </div></section>
-<section><div class="w">
+<section id="brands"><div class="w">
 <h2>Why brands work with us</h2>
 <p class="lead">Authenticity first: real family life, not polished ads, so our community engages because they trust us. Family plus LGBTQ+ reach: we speak to queer families, allies, and anyone drawn to modern parenting stories. And with most views coming from non-followers, a partnership does not stop at our follower list.</p>
 <h3 style="margin-top:32px">Partnership track record</h3>
@@ -158,7 +146,7 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 <div class="card"><h3>Family travel features</h3><p>Stays and destinations shown the way families actually experience them: kids, luggage, and all.</p></div>
 <div class="card"><h3>Day-in-the-life integrations</h3><p>Natural product moments woven into the family routines our audience already loves and trusts.</p></div>
 </div>
-<p style="margin-top:28px"><a class="btn d" href="gaythrouple-media-kit.pdf" download>Download our media kit (PDF)</a></p>
+<p style="margin-top:28px"><a class="btn d" href="/gaythrouple-media-kit.pdf" download>Download our media kit (PDF)</a></p>
 </div></section>
 <section id="contact" class="alt"><div class="w">
 <h2>Let us put your brand in family hands</h2>
