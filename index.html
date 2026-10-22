@@ -48,7 +48,12 @@ input,textarea{font:inherit;padding:12px 14px;border:1px solid var(--b2);border-
 footer{background:var(--c);color:var(--b);padding:32px 0;font-size:.9rem}footer a{color:var(--o)}
 .hero img{width:100%;height:auto;border-radius:18px;margin-top:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:hidden;margin:4px 0 12px}.bar i{display:block;height:100%;background:var(--o)}
-.igrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));margin-top:24px}.ig{margin:0}.ig figcaption{font-weight:700;margin-bottom:8px;color:var(--od)}.ig .instagram-media{min-width:0!important;width:100%!important;max-width:540px!important;margin:0!important;background:#fff;border-radius:14px;padding:16px}
+.igrid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));margin-top:24px;align-items:start}.ig{margin:0;min-width:0}.ig figcaption{font-weight:700;margin-bottom:8px;color:var(--od)}
+.ig .instagram-media{background:#fff;border:0;border-radius:14px;margin:0;max-width:540px;min-width:0;width:100%;padding:0;box-shadow:0 4px 18px rgba(44,36,22,.12)}
+.ig iframe.instagram-media{min-width:0!important;width:100%!important;max-width:540px!important;border-radius:14px!important}
+.fb{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:300px;padding:28px;text-align:center;text-decoration:none;color:#fff;border-radius:14px;background:linear-gradient(150deg,var(--o),var(--od))}
+.fb .play{display:flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:50%;background:rgba(255,255,255,.22);font-size:28px;padding-left:5px}
+.fb .cta{background:#fff;color:var(--od);padding:8px 16px;border-radius:999px;font-weight:700;font-size:.95rem}
 </style>
 </head>
 <body>
@@ -86,12 +91,21 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 <h2>Series: Kids Eat Free</h2>
 <p class="lead">Our family eating out with all three kids at restaurants where kids eat free. Every episode opens with one big repeating title, <b>3 KIDS. $0.</b>, with the restaurant line underneath.</p>
 <div class="card" style="margin-top:24px"><h3>Local SoCal spots we've featured</h3><p>The Kebab Shop La Habra · Green Tomato Grill Brea · WaBa Grill · Rubio's</p></div>
-<p style="margin-top:20px"><b>Family restaurants:</b> want your kids-eat-free night in front of families who are already looking for one? Let's feature it. <a href="#contact">Get in touch</a>.</p><p>Watch an episode: <a href="https://www.instagram.com/gaythrouple/reel/DdwiKP-JG8I/" target="_blank" rel="noopener">Kids Eat Free: Green Tomato Grill, Brea</a> · <a href="#featured">more featured posts</a></p>
+<p style="margin-top:20px"><b>Family restaurants:</b> want your kids-eat-free night in front of families who are already looking for one? Let's feature it. <a href="#contact">Get in touch</a>.</p><p>Watch an episode: <a href="https://www.instagram.com/reel/DdwiKP-JG8I/" target="_blank" rel="noopener">Kids Eat Free: Green Tomato Grill, Brea</a> · <a href="#featured">more featured posts</a></p>
 </div></section>
 <section id="featured" class="alt"><div class="w">
 <h2>Featured posts</h2>
-<div class="igrid"><figure class="ig"><figcaption>Our most-viewed Reel (527K views)</figcaption><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/gaythrouple/reel/DO1QfvdCU-1/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/gaythrouple/reel/DO1QfvdCU-1/" target="_blank" rel="noopener">Watch on Instagram: Our most-viewed Reel (527K views)</a></blockquote></figure><figure class="ig"><figcaption>Travel: Bangkok</figcaption><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/gaythrouple/reel/Cm5jtMBp169/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/gaythrouple/reel/Cm5jtMBp169/" target="_blank" rel="noopener">Watch on Instagram: Travel: Bangkok</a></blockquote></figure><figure class="ig"><figcaption>Kids Eat Free: Green Tomato Grill, Brea</figcaption><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/gaythrouple/reel/DdwiKP-JG8I/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/gaythrouple/reel/DdwiKP-JG8I/" target="_blank" rel="noopener">Watch on Instagram: Kids Eat Free: Green Tomato Grill, Brea</a></blockquote></figure><figure class="ig"><figcaption>Brand partnership: TernX</figcaption><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/gaythrouple/reel/DTJutxvCTzq/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/gaythrouple/reel/DTJutxvCTzq/" target="_blank" rel="noopener">Watch on Instagram: Brand partnership: TernX</a></blockquote></figure></div>
-<script>(function(){var d=0,t=document.getElementById('featured');function L(){if(d)return;d=1;var s=document.createElement('script');s.async=1;s.src='https://www.instagram.com/embed.js';document.body.appendChild(s)}if('IntersectionObserver'in window){new IntersectionObserver(function(e,o){if(e[0].isIntersecting){L();o.disconnect()}},{rootMargin:'400px'}).observe(t)}else L()})();</script>
+<div class="igrid">
+<figure class="ig"><figcaption>Our most-viewed Reel (527K views)</figcaption>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DO1QfvdCU-1/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a class="fb" href="https://www.instagram.com/reel/DO1QfvdCU-1/?utm_source=ig_embed" target="_blank" rel="noopener"><span class="play" aria-hidden="true">&#9654;</span><b>Our most-viewed Reel (527K views)</b><span class="cta">Watch on Instagram &rarr;</span></a></blockquote></figure>
+<figure class="ig"><figcaption>Travel: Bangkok</figcaption>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/Cm5jtMBp169/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a class="fb" href="https://www.instagram.com/reel/Cm5jtMBp169/?utm_source=ig_embed" target="_blank" rel="noopener"><span class="play" aria-hidden="true">&#9654;</span><b>Travel: Bangkok</b><span class="cta">Watch on Instagram &rarr;</span></a></blockquote></figure>
+<figure class="ig"><figcaption>Kids Eat Free: Green Tomato Grill, Brea</figcaption>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DdwiKP-JG8I/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a class="fb" href="https://www.instagram.com/reel/DdwiKP-JG8I/?utm_source=ig_embed" target="_blank" rel="noopener"><span class="play" aria-hidden="true">&#9654;</span><b>Kids Eat Free: Green Tomato Grill, Brea</b><span class="cta">Watch on Instagram &rarr;</span></a></blockquote></figure>
+<figure class="ig"><figcaption>Brand partnership: TernX</figcaption>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTJutxvCTzq/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"><a class="fb" href="https://www.instagram.com/reel/DTJutxvCTzq/?utm_source=ig_embed" target="_blank" rel="noopener"><span class="play" aria-hidden="true">&#9654;</span><b>Brand partnership: TernX</b><span class="cta">Watch on Instagram &rarr;</span></a></blockquote></figure>
+</div>
+<p class="small">Reels not loading? Tap any card to watch on <a href="https://instagram.com/gaythrouple" rel="noopener">Instagram</a>.</p>
 </div></section>
 <section id="numbers"><div class="w">
 <h2>The numbers behind the reach</h2>
@@ -164,5 +178,7 @@ h3{margin-top:8px}.bar{background:#fff;border-radius:999px;height:12px;overflow:
 </div></section>
 </main>
 <footer><div class="w">GayThrouple · <a href="https://instagram.com/gaythrouple" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@thegaythrouple" rel="noopener">TikTok</a> · <a href="mailto:gaythrouple3@gmail.com">gaythrouple3@gmail.com</a> · © 2026</div></footer>
+<script async src="https://www.instagram.com/embed.js" onload="window.instgrm&&window.instgrm.Embeds.process()"></script>
+<script>window.addEventListener('load',function(){if(window.instgrm)window.instgrm.Embeds.process()});</script>
 </body>
 </html>
